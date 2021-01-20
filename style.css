@@ -1,7 +1,6 @@
                 body {
                     background-color: #FEFEFA;
                     background: url(https://i.imgsafe.org/181dc1e08e.jpg) top right no-repeat;
-                    /* background-attachment: fixed; */
                 }
                 
                 .box {
@@ -42,11 +41,11 @@
                 .grandma {
                     background-color: slategray;
                     width: 98%;
+                    height: 240px;
                     padding-left: 2%;
                     position: static;
                     padding-top: 1%;
                     padding-bottom: 1%;
-                    overflow: auto;
                 }
                 
                 a {
