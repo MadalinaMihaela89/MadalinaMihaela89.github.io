@@ -1,57 +1,53 @@
-                body {
-                    background-color: #FEFEFA;
-                    background: url(https://i.imgsafe.org/181dc1e08e.jpg) top right no-repeat;
-                }
-                
-                .box {
-                    text-align: center;
-                    width: 500px;
-                    height: 300px;
-                    margin-left: 800px;
-                }
-                
-                h1 {
-                    text-align: center;
-                }
-                
-                main {
-                    font-size: 20px;
-                }
-                
-                header {
-                    font-size: 20px;
-                }
-                
-                td {
-                    height: 50px;
-                    border-top: 1px solid #CCC;
-                }
-                
-                .flex-columns {
-                    border-right: 40px;
-                    margin-left: 1660px;
-                    flex: auto
-                }
-                
-                .center {
-                    display: block;
-                    margin-left: 835px;
-                }
-                
-                .grandma {
-                    background-color: slategray;
-                    width: 98%;
-                    height: 240px;
-                    padding-left: 2%;
-                    position: static;
-                    padding-top: 1%;
-                    padding-bottom: 1%;
-                }
-                
-                a {
-                    color: rgb(43, 64, 66);
-                }
-                
-                a:hover {
-                    color: hotpink;
-                }
+            body {
+                background-color: #FEFEFA;
+                background: url(https://i.imgsafe.org/181dc1e08e.jpg) top right no-repeat;
+                width: 80%;
+                margin: 0 auto;
+            }
+            
+            table {
+                margin: 0 auto;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            main {
+                font-size: 20px;
+            }
+            
+            header {
+                font-size: 20px;
+            }
+            
+            td {
+                height: 50px;
+                border-top: 1px solid #CCC;
+            }
+            
+            .flex-columns {
+                flex: right;
+            }
+            
+            .grandma {
+                background-color: slategray;
+                width: 98%;
+                height: 230px;
+                padding-left: 2%;
+                /* position: static; */
+                padding-top: 1%;
+                padding-bottom: 1%;
+            }
+            
+            a {
+                color: rgb(43, 64, 66);
+            }
+            
+            a:hover {
+                color: hotpink;
+            }
+            
+            footer {
+                margin: 0 auto;
+            }
