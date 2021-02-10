@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <title>Sweet</title>
+</head>
+
+<body>
+    <!-- 
+        https://getbootstrap.com/docs/4.0/layout/overview/
+        x-small: 0-576px
+        small (sm): >= 576px 
+        medium (md): >= 768px 
+        large (lg): >= 992px 
+        extra large (xl): >= 1200px 
+        extra extra large (xxl) >= 1400px
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) { ... }
+        // Medium devices (tablets, 768px and up)
+        @media (min-width: 768px) { ... }
+        // Large devices (desktops, 992px and up)
+        @media (min-width: 992px) { ... }
+        // Extra large devices (large desktops, 1200px and up)
+        @media (min-width: 1200px) { ... } 
+    -->
+
+    <nav class="container-fluid navbar navbar-expand-lg fixed-top navbar-light">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="index.html"><img class="ms-5" style="width:8em" src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse lovenavbar" id="navbarNavDropdown">
+                <!--NAVBAR NAVIGATION LEFT-->
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="pages/about.html">About us</a>
+                    </li>
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle active text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--NAVBAR NAVIGATION CENTER-->
+                <a class="navbar-brand  logo-title" href="#"><img class="ms-5" style="width:8em" src="images/logo.png"> </a>
+
+                <!--NAVBAR NAVIGATION RIGHT-->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/cool.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/cake.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/yum.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <div class="container mytext">
+        <!-- <h1 class="display-1 text-sm-start text-md-center">Bootstrap</h1> -->
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="images/chocolate.png" class=" img-fluid" />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-self-center ">
+                <h3 class="st-title" style="font-size: 40px;color: #303030;font-weight: 600;letter-spacing: 4px">
+                    <span>CHOCOLATE</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est erat, interdum et ligula nec, bibendum laoreet lectus. Vivamus nec orci eleifend, vestibulum nisi placerat, dictum diam. Mauris finibus placerat turpis id imperdiet. Aenean
+                    eu bibendum nibh. Cras tellus lorem, consequat mollis lacinia sit amet, sodales quis leo. Curabitur efficitur aliquet fringilla. Donec posuere laoreet leo, et venenatis leo dapibus eget. Curabitur iaculis, elit sed eleifend tempus,
+                    libero est aliquam sapien, nec sagittis orci mauris in nulla.</p>
+                <a href="#" style="color: #fff;background-color: #305548;border-color: #cccccc" class="btn btn-medium btn-solid mt-3">
+                    <span class="btn-text">Read more</span>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-12 col-md-6 col-lg-8 align-self-center">
+                <h3 class="st-title" style="font-size: 40px;color: #303030;font-weight: 600;letter-spacing: 4px">
+                    <span>MACARONS</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est erat, interdum et ligula nec, bibendum laoreet lectus. Vivamus nec orci eleifend, vestibulum nisi placerat, dictum diam. Mauris finibus placerat turpis id imperdiet. Aenean
+                    eu bibendum nibh. Cras tellus lorem, consequat mollis lacinia sit amet, sodales quis leo. Curabitur efficitur aliquet fringilla. Donec posuere laoreet leo, et venenatis leo dapibus eget. Curabitur iaculis, elit sed eleifend tempus,
+                    libero est aliquam sapien, nec sagittis orci mauris in nulla.</p>
+                <a href="#" style="color: #fff;background-color: #305548;border-color: #cccccc" class="btn btn-medium btn-solid mt-3">
+                    <span class="btn-text">Read more</span>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <img src="images/macarons.png" style="width:350px" class=" img-fluid " />
+            </div>
+        </div>
+        <div class="row mt-5 ">
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <img src="images/milk.png " class=" img-fluid " />
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-8 align-self-center">
+                <h3 class="st-title" style="font-size: 40px;color: #303030;font-weight: 600;letter-spacing: 4px">
+                    <span>MILK</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est erat, interdum et ligula nec, bibendum laoreet lectus. Vivamus nec orci eleifend, vestibulum nisi placerat, dictum diam. Mauris finibus placerat turpis id imperdiet. Aenean
+                    eu bibendum nibh. Cras tellus lorem, consequat mollis lacinia sit amet, sodales quis leo. Curabitur efficitur aliquet fringilla. Donec posuere laoreet leo, et venenatis leo dapibus eget. Curabitur iaculis, elit sed eleifend tempus,
+                    libero est aliquam sapien, nec sagittis orci mauris in nulla.</p>
+                <a href="#" style="color: #fff;background-color: #305548;border-color: #cccccc" class="btn btn-medium btn-solid mt-3">
+                    <span class="btn-text">Read more</span>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-5 ">
+            <div class="col-sm-12 col-md-6 col-lg-8 align-self-center">
+                <h3 class="st-title" style="font-size: 40px;color: #303030;font-weight: 600;letter-spacing: 4px">
+                    <span>FLOUR</span>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce est erat, interdum et ligula nec, bibendum laoreet lectus. Vivamus nec orci eleifend, vestibulum nisi placerat, dictum diam. Mauris finibus placerat turpis id imperdiet. Aenean
+                    eu bibendum nibh. Cras tellus lorem, consequat mollis lacinia sit amet, sodales quis leo. Curabitur efficitur aliquet fringilla. Donec posuere laoreet leo, et venenatis leo dapibus eget. Curabitur iaculis, elit sed eleifend tempus,
+                    libero est aliquam sapien, nec sagittis orci mauris in nulla.</p>
+                <a href="#" style="color: #fff;background-color: #305548;border-color: #cccccc" class="btn btn-medium btn-solid mt-3">
+                    <span class="btn-text">Read more</span>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 ">
+                <img src="images/flour2.png " class=" img-fluid " />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid bg-dark text-white footer-nav">
+        <div class="row ms-5">
+            <div class="col-md-4">
+                <img src="images/logo.png" alt="logo " title="vogue " style="width:480px " />
+                <p class="mt-4">Cake is childhood, the best and bright moments you wish could have lasted forever. Desserts are the fairy tales of the kitchen — a happily-ever-after to supper.</p>
+                <ul class="footer-social-media d-flex mt-4 gap-3 p-0 ">
+                    <li>
+                        <a class="social-media " href="#https://www.facebook.com "><img src="images/facebook-white.png " alt="img " title="Facebook " style="width: 26px " /></a>
+                    </li>
+                    <li>
+                        <a class="social-media " href="#https://www.instagram.com "><img src="images/instagram-white.png " alt="img " title="Instagram " style="width: 26px " /></a>
+                    </li>
+                    <li>
+                        <a class="social-media " href="#https://www.twitter.com "><img src="images/twitter-white.png " alt="img " title="Twitter " style="width: 26px " /></a>
+                    </li>
+                    <li>
+                        <a class="social-media " href="#https://www.pinterest.com "><img src="images/pin-white.png " alt="img " title="Pinterest " style="width: 18px " /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mt-5">
+                <p class="p-4">MORE FROM SWEET</p>
+                <ul class="footer-account ">
+                    <li>
+                        <a class="text-light " href="#news ">Newsletter</a>
+                    </li>
+                    <li>
+                        <a class="text-light " href="#contactus ">Contact us</a>
+                    </li>
+                    <li>
+                        <a class="text-light " href="#aboutvogue ">About Sweet</a>
+                    </li>
+                    <li>
+                        <a class="text-light " href="#careers ">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-2 mt-5 ">
+                <p class="p-4">SEE MORE STORIES</p>
+                <ul class="footer-buttons ">
+                    <li>
+                        <a class="text-light " href=" #culture ">Recipes</a>
+                    </li>
+                    <li>
+                        <a class="text-light" href="#living ">Goodies</a>
+                    </li>
+                    <li>
+                        <a class="text-light" href=" #wellness ">Online Shop</a>
+                    </li>
+                    <li>
+                        <a class="text-light" href=" #skin ">Cake Shop</a>
+                    </li>
+                    <li>
+                        <a class="text-light" href=" #shopping ">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 d-flex justify-content-end">
+                <img src="images/caramel.png" alt="logo " title="sweet " style="width:300px " />
+            </div>
+        </div>
+    </div>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+</body>
+
+</html>
